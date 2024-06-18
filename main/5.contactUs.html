@@ -1,0 +1,79 @@
+<section id="contactUs" class="py-5">
+    <h2>Contact us</h2>
+    <form method="POST" action="form.php" class="text-left" id="form">
+      <fieldset class="row text-left">
+        <label for="name" class="col-lg-2 col-md-12 col-form-label">Name*:</label>
+       
+          <input
+          class="col-lg-10 col-md-12"
+            type="text"
+            
+            id="name"
+            placeholder="Your name"
+          />
+      </fieldset>
+      <fieldset class="row text-left">
+        <label for="email" class="col-lg-2 col-md-12 col-form-label"
+          >Email*:</label
+        >
+        
+          <input
+          class="col-lg-10 col-md-12"
+            required
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="mail@domain.ext"
+          />
+          <span id="emailWarning" class="offset-lg-2 col-lg-10" style="display: none"></span>
+      </fieldset>
+      <fieldset class="row text-left">
+        <label for="phone" class="col-lg-2 col-md-12 col-form-label">Phone:</label>
+          <input
+          class="col-lg-10 col-md-12"
+            required
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="ej. 685830365 ext.34"
+          />
+          <span id="phoneWarning" class="offset-lg-2 col-lg-10" style="display: none"></span>
+      </fieldset>
+      <fieldset class="row text-left">
+        <label for="subject" class="col-lg-2 col-md-12 col-form-label"
+          >Subject*:</label
+        >
+          <input
+          class="col-lg-10 col-md-12"
+            type="text"
+            class="form-control"
+            id="subject"
+            placeholder="Subject"
+          />
+        </div>
+      </fieldset>
+      <fieldset class="row text-left">
+          <label for="message" class="col-lg-2 col-md-12 col-form-label">Message*:</label>
+          <div class="col-lg-10 col-md-12">
+            <textarea
+              class="form-control"
+              id="message"
+              style="height: 100px"
+              placeholder="Reason"
+            ></textarea>
+          </div>
+        </fieldset>
+        
+      <fieldset class="row text-left">
+        <label class="col-lg-2 col-md-12 col-form-label"></label>
+        <div class="col-lg-10 col-md-12">
+          <input
+            id="buttonSend"
+            type="submit"
+            value="Send"
+            class="btn btn-light"
+          />
+        </div>
+      </fieldset>
+    </form>
+</section>
