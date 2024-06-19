@@ -15,8 +15,10 @@ function highLightSection(evento){
         }
     }
 }
+
 function setUpHighLighting(){
     let main = document.querySelector("main");
     main.addEventListener("click", highLightSection)
 }
+
 window.addEventListener("load", setUpHighLighting);
